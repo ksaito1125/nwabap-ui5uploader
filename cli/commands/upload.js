@@ -7,6 +7,7 @@ const glob = require('fast-glob');
 
 function UploadCommand () {
     return program
+        .version('0.3.4-tsb')
         .command('upload')
         .description('upload some files to SAP')
         .option("--conn_server <conn_server>", "SAP host")
@@ -145,7 +146,7 @@ function UploadCommand () {
             });
             filestore.syncFiles(files, options.base, function (err) {
                 if (err) {
-                    console.log(colors.red('Error!'), err);
+                    console.log(colors.red('Debug//Error!'), err);
                 }
             });
         });
