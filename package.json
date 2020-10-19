@@ -1,6 +1,6 @@
 {
   "name": "nwabap-ui5uploader",
-  "version": "0.3.4",
+  "version": "0.3.4-tsb",
   "description": "Deploying a SAPUI5/OpenUI5 file structure to SAP NetWeaver ABAP via ADT (ABAP Developer Tools)",
   "keywords": [
     "npm module",
@@ -28,6 +28,7 @@
     "url": "https://github.com/nrdev88/nwabap-ui5uploader/issues"
   },
   "main": "cli/bootstrap.js",
+  "private": true,
   "bin": {
     "nwabap": "./bin/nwabap.js"
   },
